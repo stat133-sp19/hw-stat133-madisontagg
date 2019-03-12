@@ -2,11 +2,11 @@
 
 Private Repository for HW assignments of Stat 133 (Spring 2019)
 
-- Name: Your name (first last)
-- Github username: usrname
-- Email: address [at] email.com
+- Name: Madison Tagg
+- Github username: madisontagg
+- Email: madison.tagg [at] berkeley.com
 - Lab section: 101
-- GSI: Leia Organa
+- GSI: Colin Kou
 
 -----
 
