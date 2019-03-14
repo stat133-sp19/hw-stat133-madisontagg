@@ -26,4 +26,5 @@ Clear Description of HW:
   -Creating charts that are visually appealing. These charts will contain the coordinates of each of the players successfull shot did or didn't go in.
   -facet_wrap will then be used to join the tables into one and used later in the report.
   
-5. Report
+5. Report:
+  -This includes both .md file and Rmd files of the report constructed.
