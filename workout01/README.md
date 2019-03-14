@@ -7,7 +7,7 @@ Clear Description of HW:
 
 
 2. Data:
-    +Download the Data
+  -Download the Data
   -Data Dictionary:
     Created a dictionary-using markdown syntax- in a seperate text file called data-dictionary.md.
 
