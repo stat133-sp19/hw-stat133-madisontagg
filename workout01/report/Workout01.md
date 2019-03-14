@@ -19,7 +19,7 @@ Just because one scores more points, Is that person the best player on the team?
 
 #### Data:
 
-<img src=".../workout01/images/gsw-shot-charts.pdf" width="80%" style="display: block; margin: auto;" />
+<img src="/Users/madisontagg/Desktop/workout01/images/gsw-shot-charts.pdf" width="80%" style="display: block; margin: auto;" />
 
     ## 
     ## Attaching package: 'dplyr'
