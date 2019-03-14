@@ -1,10 +1,9 @@
-# Make Shots Data SCript ---------------------------------
-# Description ---------------------------------
-# In this R script files, I am creating a global table consisting information from players Andre Iguodala, Draymond Green, Klay Thompson, and Steph Curry.
-# Inputs ---------------------------------
-# The Inputs needed for this R script are the csv files in data.
-# Outputs ---------------------------------
-# The outputs of this R script are txt files in the folder outputs.
+#####################################################
+#Title: Make Shots Data SCript ---------------------------------
+#Description: In this R script files, I am creating a global table consisting information from players Andre Iguodala, Draymond Green, Klay Thompson, and Steph Curry.
+#Inputs: The Inputs needed for this R script are the csv files in data.
+#Outputs: The outputs of this R script are txt files in the folder outputs.
+####################################################
 
 
 
