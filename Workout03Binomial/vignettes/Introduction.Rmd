@@ -1,0 +1,99 @@
+---
+title: "Introduction to Package Binomial"
+author: "Madison Tagg"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>")
+library(Workout03Binomial)
+```
+
+
+#Workout03 Binomial Package
+
+###Binomial Distribution Purpose
+    * The purpose of the creation of this R package is to implements functions for calculating probabilities of a Binomial Random Variable, and related calculations. In doing so, getting measurements and visualizations.
+
+###Some Binomial Calculations:
+1. bin_choose(n, k):
+    * Description: calculates the number of combinations in which *k* successes can occur in *n* trials
+    * Example:
+```{r}    
+bin_choose(n = 5, k = 2)
+```
+    
+2. bin_probability(success, trials, prob):
+    * Description: calculates the probability of getting *success* in *trials* assuming that the probability of success is *prob*.
+    * Example:
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5)
+```
+
+###Constructing a Binomial Distribution:
+1. bin_distribution():
+    * Description: creates a data frame with the probaility distribution with *success* in the first column, and *probability* in the second column.
+    * Example:
+```{r}
+bin_distribution(trials = 5, prob = 0.5)
+```
+    * *Plotting the Binomial Distribution* with the function plot()
+```{r}
+dis1 <- bin_distribution(trials = 5, prob = 0.5)
+plot(dis1)
+```
+
+2. bin_cumulative():
+    * Description: creates a data frame with the probaility distribution with *success* in the first column, and *probability* in the second column, and cumlative probability in the third column.
+    * Example:
+```{r}
+bin_cumulative(trials = 5, prob = 0.5)
+```
+    * *Plotting the Binomial Distribution* with the function plot()
+```{r}
+dis2 <- bin_cumulative(trials = 5, prob = 0.5)
+plot(dis2)
+```
+
+###Calculating a Binomial Summary:
+1. bin_variable(trials, p):
+    * Description: prints out the binomial variable
+    * Example:
+```{r}
+bin_variable(trials = 10, p = 0.3)
+```
+
+2. summary():
+    * Description: Using the bin_variable that you constructed, one can calculate the summary of the binomial variable by using this function.
+    * Example:
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3)
+binsum1 <- summary(bin1)
+binsum1
+```
+
+### More Functions of measures:
+    * Description: This package contains more main functions and one can see how invoke these functions below in the table:
+
+*Table: Measurement Functions*
+
+
+Measures:      | Functions to Use:          |  Example:
+---------------|----------------------------|-----------------------------
+mean           | bin_mean(trials,prob)      | bin_mean(4, 0.25) = 1
+variance       | bin_variance(trials,prob)  | bin_variance(4, 0.25) = 0.75
+mode           | bin_mode(trials,prob)      | bin_mode(4, 0.25) = 1
+skewness       | bin_skewness(trials,prob)  | bin_skewness(4, 0.25) = 0.58
+kurtosis       | bin_kurtosis(trials,prob)  | bin_kurtosis(4, 0.25) = -0.16
+
+
+
+
+
