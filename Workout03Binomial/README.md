@@ -69,9 +69,9 @@ Install the development version from GitHub via the package `"devtools"`:
 ``` r
 # development version from GitHub:
 #install.packages("devtools") 
-# install "cointoss" (without vignettes)
+# install "Workout03Binomial" (without vignettes)
 devtools::install_github("madisontagg/Workout03Binomial")
-# install "cointoss" (with vignettes)
+# install "Workout03Binomial" (with vignettes)
 devtools::install_github("madisontagg/Workout03Binomial", build_vignettes = TRUE)
 ```
 
